@@ -1,0 +1,13 @@
+/* Created by: MariaG
+* Created on: April 20, 2022
+* This CSS file defines the style for index.html
+* ICS2O-Assign-03-HTML-BookCount
+*/
+
+img {
+  width: 30%;
+}
+
+figcaption {
+  font-size: 1.1vw;
+}

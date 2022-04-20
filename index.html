@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Maria's Fahrenheit to Celsius Webpage">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="MariaG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Code for the favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Title -->
+    <title>Book Count - Calculating Page and Word Count for Books - Maria G</title>
+  </head>
+  <body>
+    <script serc="./js/script.js">
+    <h1>Book Count</h1>
+    <h3>Calculating a Book's Word Count</h3>
+    <p>Welcome to Book Count! This web page will calculate the approximate word count for a book with page size 5" x 8". Please see the average number of words per page below based on different font sizes, then input your book's information in the form at the bottom of the page.</p>
+    <!-- Adding an image with a caption. Method found at https://www.w3schools.com/tags/tag_figcaption.asp -->
+    <figure>
+      <!-- Adding a link to the image -->
+      <a href="https://www.bookdesignmadesimple.com/calculate-book-page-count-using-word-count/">
+        <img src="./images/averages.png" alt="Calculating the average number of words in different font sizes">
+      </a>
+      <figcaption>Click on the image to learn more.</figcaption>
+    </figure>
+    <h3>Your Book's Information:</h3>
+    <!-- Form for user input -->
+    <form action="javascript:valuesSent()">
+      <label for="pages">Number of Book Pages</label>
+      <input type="number" step="1" id="book-pages" placeholder="Number of Pages..."><br><br>
+      <!-- Adding a multiple choice ("select") input field - learned from https://www.w3schools.com/html/html_form_elements.asp -->
+      <label for="font-size">Font Size</label>
+      <select id="font-size" name="font-size">
+        <option value="ten">10</option>
+        <option value="eleven">11</option>
+        <option value="twelve">12</option>
+      </select><br><br>
+      <input type="submit" value="Calculate">
+    </form>
+  </body>
+</html>
