@@ -4,30 +4,97 @@
 * ICS2O-Assign-03-HTML-BookCount
 */
 
-img {
-  width: 25%;
-}
-
-figcaption {
-  font-size: 1vw;
+body {
+  width: 80vw;
+  margin: 5% 10vw;
 }
 
 #left-side {
   float: left;
   background-color: #283999;
-  padding: 30px;
+  padding: 50px 30px;
   color: white;
-  margin-left: 10%;
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
-  width: 20%;
+  width: 20vw;
 }
 
-#container {
-  margin-left: 30%;
+#books {
+  margin-left: 50px;
+  width: 64%;
+  height: 237px;
+  float: right;
 }
 
-#right-side {
+#green {
+  float: right;
+  padding: 10px 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #ddfdd6;
+  margin-top: 30px;
+  width: 60%;
+}
+
+h5 {
+  margin-left: 5%;
+}
+
+.width {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#caption {
+  width: 30.5%;
+  margin-top: 30px;
+}
+
+#margin {
+  width: 100%;
+  margin-top: 30px;
+  border-style: solid;
+  border-color: #f2f1f0;
+}
+
+#size {
+  font-size: 1vw;
+}
+
+#orange {
+  width: 27%;
+  float: left;
   padding: 20px;
-  margin: 90px;
+  background-color: #fedeca;
+  margin-top: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 5%;
+}
+
+form {
+  margin-left: 5%;
+}
+
+#yellow {
+  margin-top: 20px;
+  float: right;
+  width: 60%;
+  background-color: #fdfdb6;
+  padding: 20px;
+  height: 237px;
+  margin-bottom: 5%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#results {
+  width: 90%;
+  margin-left: 5%;
+  color: #344d94;
+  font-weight: bold;
+  height: 20px;
+}
+
+#border {
+  border-style: solid;
+  border-color: #ffdb9d;
+  background-color: #ffdb9d;
 }

@@ -12,55 +12,74 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
+    <!-- Code for the MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-blue.min.css">
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Title -->
     <title>Book Count - Calculating Page and Word Count for Books - Maria G</title>
   </head>
   <body>
+    <!-- More MDL code -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Link to JS file -->
     <script src="./js/script.js"></script>
     <!-- First div for style -->
     <div id="left-side">
-      <h1>Book Count</h1>
+      <h2>Book Count</h2>
       <p>A tool for writers everywhere</p>
     </div>
-    <!-- Container to keep proper margin between two coloured divs -->
-    <div id="container">
-      <!-- A div for background colour -->
-      <div id="right-side">
-        <h3>Calculating a Book's Word Count</h3>
-        <p>Welcome to Book Count! This web page will calculate the approximate word count for a fiction or nonfiction book. Please see the average number of words per page below based on different font sizes, then input your book's information in the form at the bottom of the page.</p>
-      </div>
+    <img id="books" src="./images/books.jpg" alt="books">
+    <!-- Div for background colour -->
+    <div id="green">
+      <br>
+      <h5>Calculating a Book's Word Count</h5>
+      <p class="width">Welcome to Book Count! This web page will calculate the approximate word count for a fiction or nonfiction book. Please see the average number of words per page based on different font sizes in the image to the left, then input your book's information in the form below.</p>
+      <br>
     </div>
-    <!-- Adding an image with a caption. Method found at https://www.w3schools.com/tags/tag_figcaption.asp -->
-    <figure>
+    <!-- Div to connect text and image -->
+    <div id="caption">
       <!-- Adding a link to the image -->
       <a href="https://www.bookdesignmadesimple.com/calculate-book-page-count-using-word-count/">
-        <img src="./images/averages.png" alt="Calculating the average number of words in different font sizes">
+        <img src="./images/averages.png" alt="Calculating the average number of words in different font sizes" id="margin">
       </a>
-      <figcaption>Click on the image to learn more.</figcaption>
-    </figure>
-    <h3>Your Book's Information:</h3>
-    <!-- Form for user input -->
-    <form action="javascript:valuesSent()">
-      <label for="pages">Number of Book Pages</label>
-      <input type="number" step="0.01" min="0" id="book-pages" placeholder="Number of Pages..."><br><br>
-      <!-- Adding a multiple choice ("select") input field - learned from https://www.w3schools.com/html/html_form_elements.asp -->
-      <label for="font-size">Font Size</label>
-      <select id="font-size" name="font-size">
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-      </select><br><br>
-      <!-- A second multiple choice input - for page size -->
-      <label for="page-size">Page Size</label>
-      <select id="page-size" name="page-size">
-        <option value="1">5" x 8"</option>
-        <option value="2">6" x 9"</option>
-      </select><br><br>
-      <input type="submit" value="Calculate">
-    </form>
-    <!-- Div for results to be displayed on web page -->
-    <div id="results"></div>
+      <p id="size">Click on the image to learn more.</p>
+    </div>
+    <!-- Div for background colour -->
+    <div id="orange">
+      <h5>Your Book's Information:</h5>
+      <!-- Form for user input -->
+      <form action="javascript:valuesSent()">
+        <label for="pages">Number of Book Pages</label>
+        <input type="number" step="0.01" min="0" id="book-pages" placeholder="Number of Pages..."><br><br>
+        <!-- Adding a multiple choice ("select") input field - learned from https://www.w3schools.com/html/html_form_elements.asp -->
+        <label for="font-size">Font Size</label>
+        <select id="font-size" name="font-size">
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select><br><br>
+        <!-- A second multiple choice input - for page size -->
+        <label for="page-size">Page Size</label>
+        <select id="page-size" name="page-size">
+          <option value="1">5" x 8"</option>
+          <option value="2">6" x 9"</option>
+        </select><br><br>
+        <input type="submit" value="Calculate" id="border" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+      </form>
+    </div>
+    <!-- Div for background colour -->
+    <div id="yellow">
+      <h5>Results:</h5>
+      <!-- Div for results to be displayed on web page -->
+      <div id="results"></div>
+      <h5>Another Calculation:</h5>
+      <p class="width">Would you you rather calculate the approximate page count of a book given its word count? Visit our second webpage by clicking the button below:</p>
+      <!-- Accent-colored raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent width">
+        Click here!
+      </button>
+    </div>
   </body>
 </html>
