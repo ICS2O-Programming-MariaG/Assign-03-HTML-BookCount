@@ -11,3 +11,23 @@ img {
 figcaption {
   font-size: 1vw;
 }
+
+#left-side {
+  float: left;
+  background-color: #283999;
+  padding: 30px;
+  color: white;
+  margin-left: 10%;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 20%;
+}
+
+#container {
+  margin-left: 30%;
+}
+
+#right-side {
+  padding: 20px;
+  margin: 90px;
+}
