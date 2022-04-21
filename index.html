@@ -21,7 +21,7 @@
     <script src="./js/script.js"></script>
     <h1>Book Count</h1>
     <h3>Calculating a Book's Word Count</h3>
-    <p>Welcome to Book Count! This web page will calculate the approximate word count for a book with page size 5" x 8". Please see the average number of words per page below based on different font sizes, then input your book's information in the form at the bottom of the page.</p>
+    <p>Welcome to Book Count! This web page will calculate the approximate word count for a fiction or nonfiction book. Please see the average number of words per page below based on different font sizes, then input your book's information in the form at the bottom of the page.</p>
     <!-- Adding an image with a caption. Method found at https://www.w3schools.com/tags/tag_figcaption.asp -->
     <figure>
       <!-- Adding a link to the image -->
@@ -34,13 +34,19 @@
     <!-- Form for user input -->
     <form action="javascript:valuesSent()">
       <label for="pages">Number of Book Pages</label>
-      <input type="number" step="1" id="book-pages" placeholder="Number of Pages..."><br><br>
+      <input type="number" step="0.01" min="0" id="book-pages" placeholder="Number of Pages..."><br><br>
       <!-- Adding a multiple choice ("select") input field - learned from https://www.w3schools.com/html/html_form_elements.asp -->
       <label for="font-size">Font Size</label>
       <select id="font-size" name="font-size">
         <option value="10">10</option>
         <option value="11">11</option>
         <option value="12">12</option>
+      </select><br><br>
+      <!-- A second multiple choice input - for page size -->
+      <label for="page-size">Page Size</label>
+      <select id="page-size" name="page-size">
+        <option value="1">5" x 8"</option>
+        <option value="2">6" x 9"</option>
       </select><br><br>
       <input type="submit" value="Calculate">
     </form>
