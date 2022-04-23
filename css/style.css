@@ -67,7 +67,6 @@ h5 {
   background-color: #fedeca;
   margin-top: 20px;
   font-family: Helvetica, Arial, sans-serif;
-  margin-bottom: 5%;
 }
 
 form {
@@ -81,7 +80,6 @@ form {
   background-color: #fdfdb6;
   padding: 20px;
   height: 237px;
-  margin-bottom: 5%;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -97,4 +95,11 @@ form {
   border-style: solid;
   border-color: #ffdb9d;
   background-color: #ffdb9d;
+}
+
+#bottom-spacing {
+  width: 100%;
+  padding: 40px;
+  background-color: white;
+  margin-top: 300px;
 }

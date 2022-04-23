@@ -48,11 +48,14 @@
     </div>
     <!-- Div for background colour -->
     <div id="orange">
-      <h5>Your Book's Information:</h5>
+      <h5>Your Book's Information:</h5>     
       <!-- Form for user input -->
       <form action="javascript:valuesSent()">
-        <label for="pages">Number of Book Pages</label>
-        <input type="number" step="0.01" min="0" id="book-pages" placeholder="Number of Pages..."><br><br>
+        <!-- MDL numeric text field -->
+        <div class="mdl-textfield mdl-js-textfield">
+          <input id="book-pages" class="mdl-textfield__input" type="number" step="0.01" min="0" id="sample2" placeholder="Number of Pages">
+          <span class="mdl-textfield__error">Input type is not accepted!</span>
+        </div>
         <!-- Adding a multiple choice ("select") input field - learned from https://www.w3schools.com/html/html_form_elements.asp -->
         <label for="font-size">Font Size</label>
         <select id="font-size" name="font-size">
@@ -80,6 +83,9 @@
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent width" onclick="window.location.href='https://assign-03-php-bookcount.mariagoemans1.repl.co/'">
         Click here!
       </button>
+    </div>
+    <!-- Div to fix spacing issue (adding blank space at the bottom of the page - which had previously disappeared due to setting styled divs to float) -->
+    <div id="bottom-spacing">
     </div>
   </body>
 </html>
