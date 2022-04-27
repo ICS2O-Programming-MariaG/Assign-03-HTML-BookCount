@@ -31,17 +31,17 @@ function valuesSent() {
   }
   //Second big if/then option: page size option 2 means page size 6" x 9"
   else if (pageSize == 2) {
-    //fontSize is 10
+    //if fontSize is 10
     if (fontSize == 10) {
       let wordCount = pageCount * 600;
       document.getElementById("results").innerHTML = "The approximate word count of the book is " + wordCount.toFixed(0) + " words.";
     } 
-    //fontSize is 11
+    //if fontSize is 11
     else if (fontSize == 11) {
       let wordCount = pageCount * 500;
       document.getElementById("results").innerHTML = "The approximate word count of the book is " + wordCount.toFixed(0) + " words.";
     }
-    //fontSize is 12 (neither of the other scenarios)
+    //if fontSize is 12 (neither of the other scenarios)
     else {
       let wordCount = pageCount * 425;
       document.getElementById("results").innerHTML = "The approximate word count of the book is " + wordCount.toFixed(0) + " words.";
